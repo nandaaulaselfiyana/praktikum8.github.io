@@ -1,0 +1,74 @@
+/* navbar */ 
+nav{ 
+    padding: 20px; 
+    display:flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 30px; 
+    background-color: #ffe6f2; 
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #ff99cc;
+} 
+ 
+nav a{ 
+    text-decoration: none; 
+    color: #ff6699; 
+    font-weight: bold; 
+    font-size: 18px; 
+    padding: 12px 25px; 
+    border-radius: 30px; 
+    transition: all 0.3s ease;
+    background-color: rgba(255,255,255,0.5);
+    border: 2px solid #ff99cc;
+    position: relative;
+} 
+ 
+nav a:hover{ 
+    background-color: #ff99cc; 
+    color: white; 
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255,105,180,0.3);
+} 
+
+nav a:hover::after {
+    content: '💖';
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    font-size: 16px;
+}
+
+/* header */ 
+header{ 
+    color: #ff3366; 
+    padding: 50px 100px; 
+    margin-bottom: 40px; 
+    background-color: #fff0f5; 
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+} 
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" font-size="30" fill="%23ff99cc22" dominant-baseline="middle" text-anchor="middle">💖</text></svg>');
+}
+
+/* sections */ 
+#tentang,#proyek,#kontak { 
+    width: 40%; 
+    padding: 30px; 
+    margin: 0 auto 40px; 
+    text-align: justify; 
+    box-shadow: 0 8px 32px rgba(255, 105, 180, 0.15); 
+    background: linear-gradient(145deg, #fff0f5, #ffe6f2);
+    border-radius: 20px; 
+    border: 2px solid #ff99cc;
+}
